@@ -44,6 +44,7 @@ body {
   overflow-x: hidden;
   min-height: 100vh;
   font-feature-settings: "rlig" 1, "calt" 1;
+  scroll-behavior: smooth;
 }
 
 body {

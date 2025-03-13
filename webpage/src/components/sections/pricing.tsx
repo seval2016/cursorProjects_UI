@@ -49,7 +49,7 @@ export function PricingSection() {
   ];
 
   return (
-    <section className="relative py-12">
+    <section id="pricing" className="relative py-12">
       <div className="w-full absolute inset-0">
         <SparklesCore
           id="tsparticlespricing"

@@ -5,7 +5,7 @@ import { SparklesCore } from "@/components/ui/sparkles";
 
 export function FeaturedVideosSection() {
   return (
-    <section className="relative py-16">
+    <section id="popular-videos" className="relative py-16">
       <div className="absolute inset-0">
         <SparklesCore
           id="tsparticlesfeatured"

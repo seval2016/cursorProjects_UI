@@ -12,7 +12,7 @@ export function PopularVideos() {
     description: category.description,
     content: (
       <div>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4  ">
           {category.videos.map((video) => (
             <Link
               key={video.id}
@@ -29,7 +29,7 @@ export function PopularVideos() {
               <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity bg-black/20 rounded-lg">
                 <Play className="w-12 h-12 text-white" />
               </div>
-              <div className="absolute bottom-0 left-0 right-0 p-4 bg-black/40">
+              <div className="absolute bottom-0 left-0 right-0 p-4">
                 <h4 className="text-white text-sm font-semibold">{video.title}</h4>
                 <p className="text-white/80 text-xs mt-1">{video.description}</p>
               </div>

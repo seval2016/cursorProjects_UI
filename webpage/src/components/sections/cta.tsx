@@ -4,7 +4,7 @@ import { SparklesCore } from "@/components/ui/sparkles";
 
 export function CallToActionSection() {
   return (
-    <section className="relative py-16">
+    <section id="ready-to-learn" className="relative py-16">
       <div className="absolute inset-0">
         <SparklesCore
           id="tsparticlescta"

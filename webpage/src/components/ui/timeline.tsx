@@ -36,15 +36,10 @@ export const Timeline = ({ data }: { data: TimelineEntry[] }) => {
   return (
     <div
       className="w-full  font-sans md:px-10"
-      ref={containerRef}
+      ref={containerRef} 
     >
-      <div className="max-w-7xl mx-auto py-12 px-4 md:px-8 lg:px-10">
-        <h2 className="text-base md:text-2xl mb-2 text-foreground max-w-4xl font-semibold">
-          Popüler Videolar
-        </h2>
-        <p className="text-muted-foreground text-xs md:text-sm max-w-sm">
-          En çok izlenen ve beğenilen eğitim videolarımız
-        </p>
+      <div className="max-w-7xl mx-auto px-4 md:px-8 lg:px-10">
+      <h2 className="text-3xl font-bold text-foreground text-center">Popüler Videolar</h2>
       </div>
 
       <div ref={ref} className="relative max-w-7xl mx-auto pb-20">
