@@ -1,4 +1,4 @@
-import type { Metadata } from 'next'
+import type { Metadata, Viewport } from 'next'
 import { Inter } from 'next/font/google'
 import './globals.css'
 import { Navbar } from '@/components/common/navbar'
@@ -6,6 +6,13 @@ import { Footer } from '@/components/common/footer'
 import { DarkModeProvider } from '@/hooks/useDarkMode'
 
 const inter = Inter({ subsets: ['latin'] })
+
+export const viewport: Viewport = {
+  themeColor: '#10B981',
+  width: 'device-width',
+  initialScale: 1,
+  maximumScale: 1,
+}
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://your-domain.com'),
@@ -18,12 +25,6 @@ export const metadata: Metadata = {
   icons: {
     icon: '/favicon.ico',
     apple: '/apple-icon.png',
-  },
-  themeColor: '#10B981',
-  viewport: {
-    width: 'device-width',
-    initialScale: 1,
-    maximumScale: 1,
   },
   verification: {
     google: 'your-google-site-verification',
@@ -67,10 +68,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="tr" suppressHydrationWarning>
-      <body className={`${inter.className} antialiased  dark:bg-dark-bg text-secondary-900 dark:text-dark-text`}>
+      <body className={`${inter.className} antialiased bg-background text-foreground`}>
         <DarkModeProvider>
           <Navbar />
-          <main className="pt-20">
+          <main className="min-h-screen pt-20">
             {children}
           </main>
           <Footer />
