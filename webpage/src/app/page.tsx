@@ -3,7 +3,6 @@ import { FeaturedVideosSection } from "@/components/sections/featured-videos"
 import { CallToActionSection } from "@/components/sections/cta"
 import dynamic from 'next/dynamic';
 import { Metadata } from 'next';
-import { ImageResponse } from '@vercel/og';
 
 export const metadata: Metadata = {
   title: 'Yazılım Eğitimleri | Profesyonel Gelişim Platformu',
@@ -72,25 +71,4 @@ export default function Home() {
       <CallToActionSection />
     </div>
   )
-}
-
-export async function GET(request: Request) {
-  return new ImageResponse(
-    (
-      <div
-        style={{
-          width: '100%',
-          height: '100%',
-          display: 'flex',
-          backgroundColor: '#fff',
-        }}
-      >
-        <h1>Dinamik Oluşturulan Görsel</h1>
-      </div>
-    ),
-    {
-      width: 1200,
-      height: 630,
-    },
-  );
 } 

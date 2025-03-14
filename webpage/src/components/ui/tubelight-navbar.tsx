@@ -4,9 +4,9 @@ import React, { useEffect, useState } from "react"
 import { LucideIcon } from "lucide-react"
 import { cn } from "@/lib/utils"
 import { styles } from "@/lib/styles"
-import { NavItem } from "./nav-item"
+import { NavItem as NavItemComponent } from "./nav-item"
 
-interface NavItem {
+export interface NavItem {
   name: string
   url: string
   icon: LucideIcon
@@ -69,7 +69,7 @@ export function NavBar({ items, className }: NavBarProps) {
     >
       <div className={cn("flex items-center gap-4 py-1.5 px-2 rounded-full shadow-lg", styles.glassEffect)}>
         {items.map((item) => (
-          <NavItem
+          <NavItemComponent
             key={item.name}
             {...item}
             isActive={activeTab === item.name}
