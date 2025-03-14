@@ -6,18 +6,18 @@ import { Play } from "lucide-react";
 import Link from "next/link";
 import videoData from "@/data/videos.json";
 
-export function PopularVideos() {
+export default function PopularVideos() {
   const data = videoData.categories.map(category => ({
     title: category.title,
     description: category.description,
     content: (
       <div>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-4  ">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           {category.videos.map((video) => (
             <Link
               key={video.id}
               href={video.url}
-              className="relative group block h-48 rounded-lg overflow-hidden bg-black/40"
+              className="relative group block h-48 rounded-lg overflow-hidden"
             >
               <Image
                 src={video.image}

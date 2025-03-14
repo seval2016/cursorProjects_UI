@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg width="400" height="300" viewBox="0 0 400 300" fill="none" xmlns="http://www.w3.org/2000/svg">
+<svg width="400" height="300" viewBox="0 0 400 300" 
+fill="none" xmlns="http://www.w3.org/2000/svg">
   <rect width="400" height="300" fill="#0F172A"/>
   <g transform="translate(165,110) scale(0.04)">
     <path fill="#f0db4f" d="M0 0h1052v1052H0z"/>

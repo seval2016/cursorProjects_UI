@@ -34,19 +34,18 @@ export const Timeline = ({ data }: { data: TimelineEntry[] }) => {
   const opacityTransform = useTransform(scrollYProgress, [0, 0.1], [0, 1]);
 
   return (
-    <div
-      className="w-full  font-sans md:px-10"
-      ref={containerRef} 
-    >
+    <div className="w-full font-sans relative py-12" ref={containerRef}>
       <div className="max-w-7xl mx-auto px-4 md:px-8 lg:px-10">
-      <h2 className="text-3xl font-bold text-foreground text-center">Popüler Videolar</h2>
+        <h2 className="text-3xl font-bold text-foreground mb-8 text-center">
+          Popüler Videolar
+        </h2>
       </div>
 
-      <div ref={ref} className="relative max-w-7xl mx-auto pb-20">
+      <div ref={ref} className="relative max-w-7xl mx-auto">
         {data.map((item, index) => (
           <div
             key={index}
-            className="flex justify-start pt-8 md:pt-32 md:gap-10"
+            className="flex justify-start pt-8 md:pt-16 md:gap-10"
           >
             <div className="sticky flex flex-col md:flex-row z-40 items-center top-40 self-start max-w-xs lg:max-w-sm md:w-full">
               <div className="h-8 absolute left-3 md:left-3 w-8 rounded-full bg-card flex items-center justify-center">
@@ -83,7 +82,7 @@ export const Timeline = ({ data }: { data: TimelineEntry[] }) => {
           style={{
             height: height + "px",
           }}
-          className="absolute md:left-8 left-8 top-0 overflow-hidden w-[2px] bg-[linear-gradient(to_bottom,var(--tw-gradient-stops))] from-transparent from-[0%] via-border to-transparent to-[99%]  [mask-image:linear-gradient(to_bottom,transparent_0%,black_10%,black_90%,transparent_100%)] "
+          className="absolute md:left-8 left-8 top-0 overflow-hidden w-[2px] bg-[linear-gradient(to_bottom,var(--tw-gradient-stops))] from-transparent from-[0%] via-border to-transparent to-[99%] [mask-image:linear-gradient(to_bottom,transparent_0%,black_10%,black_90%,transparent_100%)]"
         >
           <motion.div
             style={{

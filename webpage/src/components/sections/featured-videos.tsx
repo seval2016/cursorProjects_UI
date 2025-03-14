@@ -1,6 +1,6 @@
 "use client";
 
-import { PopularVideos } from "@/components/ui/popular-videos";
+import PopularVideos from "@/components/ui/popular-videos";
 import { SparklesCore } from "@/components/ui/sparkles";
 
 export function FeaturedVideosSection() {

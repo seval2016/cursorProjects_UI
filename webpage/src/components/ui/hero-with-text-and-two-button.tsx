@@ -5,7 +5,7 @@ import { SparklesCore } from "@/components/ui/sparkles";
 
 export function Hero1() {
   return (
-    <div id="hero" className="relative h-[70vh] flex flex-col items-center justify-center overflow-hidden">
+    <div id="hero" className="relative h-[80vh] flex flex-col items-center justify-center overflow-hidden">
       <div className="w-full absolute inset-0">
         <SparklesCore
           id="tsparticlesfullpage"

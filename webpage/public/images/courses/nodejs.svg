@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg width="400" height="300" viewBox="0 0 400 300" fill="none" xmlns="http://www.w3.org/2000/svg">
   <rect width="400" height="300" fill="#0F172A"/>
-  <g transform="translate(100,70) scale(0.25)">
+  <g transform="translate(150,100) scale(0.25)">
     <defs>
       <linearGradient x1="68.188%" y1="17.487%" x2="27.823%" y2="89.755%" id="b">
         <stop stop-color="#41873F" offset="0%"/>

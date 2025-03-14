@@ -6,6 +6,8 @@ import type { Container, SingleOrMultiple } from "@tsparticles/engine";
 import { loadSlim } from "@tsparticles/slim";
 import { cn } from "@/lib/utils";
 import { motion, useAnimation } from "framer-motion";
+import Image from "next/image";
+import dynamic from 'next/dynamic';
 
 type ParticlesProps = {
   id?: string;
@@ -52,6 +54,10 @@ export const SparklesCore = (props: ParticlesProps) => {
   };
 
   const generatedId = useId();
+
+  // Particle sayısını azalt
+  const optimizedDensity = Math.min(props.particleDensity || 50, 30);
+  
   return (
     <motion.div animate={controls} className={cn("opacity-0", className)}>
       {init && (
@@ -70,7 +76,7 @@ export const SparklesCore = (props: ParticlesProps) => {
               zIndex: 1,
             },
 
-            fpsLimit: 120,
+            fpsLimit: 30, // FPS limitini düşür
             interactivity: {
               events: {
                 onClick: {
@@ -204,10 +210,7 @@ export const SparklesCore = (props: ParticlesProps) => {
                 },
                 random: false,
                 size: false,
-                speed: {
-                  min: 0.1,
-                  max: 1,
-                },
+                speed: 0.5, // Hareket hızını azalt
                 spin: {
                   acceleration: 0,
                   enable: false,
@@ -231,7 +234,7 @@ export const SparklesCore = (props: ParticlesProps) => {
                   mode: "delete",
                   value: 0,
                 },
-                value: particleDensity || 120,
+                value: optimizedDensity
               },
               opacity: {
                 value: {
@@ -432,4 +435,6 @@ export const SparklesCore = (props: ParticlesProps) => {
       )}
     </motion.div>
   );
-}; 
+};
+
+// Lazy loading kodlarını kaldır 
