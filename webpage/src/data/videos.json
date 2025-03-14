@@ -9,14 +9,14 @@
           "title": "HTML5 ve CSS3 Temelleri",
           "description": "Web geliştirmenin temel yapı taşlarını öğrenin",
           "image": "/images/courses/html.svg",
-          "url": "/courses/web-development/html-css-basics"
+          "url": "#"
         },
         {
           "id": "javascript",
           "title": "JavaScript Esasları",
           "description": "Modern web uygulamaları için JavaScript temelleri",
           "image": "/images/courses/javascript.svg",
-          "url": "/courses/web-development/javascript-essentials"
+          "url": "#"
         }
       ]
     },
@@ -29,14 +29,14 @@
           "title": "React Hooks",
           "description": "React'in güçlü özelliklerini derinlemesine öğrenin",
           "image": "/images/courses/react.svg",
-          "url": "/courses/frontend/react-hooks-masterclass"
+          "url": "#"
         },
         {
           "id": "nextjs",
           "title": "Next.js",
           "description": "Modern full-stack uygulamalar geliştirin",
           "image": "/images/courses/nextjs.svg",
-          "url": "/courses/frontend/nextjs-14-fullstack"
+          "url": "#"
         }
       ]
     },
@@ -49,14 +49,14 @@
           "title": "Node.js",
           "description": "Güçlü backend servisleri oluşturun",
           "image": "/images/courses/nodejs.svg",
-          "url": "/courses/backend/nodejs-express-api"
+          "url": "#"
         },
         {
           "id": "postgresql",
           "title": "PostgreSQL",
           "description": "Veritabanı tasarımı ve optimizasyonu",
           "image": "/images/courses/postgresql.svg",
-          "url": "/courses/backend/postgresql-database"
+          "url": "#"
         }
       ]
     }

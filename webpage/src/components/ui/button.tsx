@@ -1,8 +1,11 @@
+"use client"
+
 import { cn } from "@/lib/utils";
 import { ButtonHTMLAttributes, forwardRef } from "react";
+import { variants } from "@/lib/styles";
 
 interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
-  variant?: 'primary' | 'secondary' | 'outline' | 'ghost';
+  variant?: keyof typeof variants.button;
   size?: 'sm' | 'md' | 'lg';
   isLoading?: boolean;
 }
